@@ -16,6 +16,7 @@ if [ ! -f "wget_sources" ]; then
 	else
 		echo "File wget_sources not downloaded... Exiting"
 		exit 1
+	fi
 fi
 wget --input-file=wget_sources --continue
 chown root:root "$PWD/"*
