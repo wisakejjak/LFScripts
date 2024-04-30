@@ -10,7 +10,7 @@ cd "$target_dir/sources" || exit 1
 if [ ! -f "wget_sources" ]; then
 	echo "File wget_sources not found... Downloading"
 	curl https://raw.githubusercontent.com/wisakejjak/LFScripts/main/wget_sources -o wget_sources
-	if [ ! -f "wget_sources" ]; then
+	if [ -f "wget_sources" ]; then
 		echo "File wget_sources downloaded successfully."
 
 	else
